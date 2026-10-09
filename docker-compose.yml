@@ -8,6 +8,7 @@ services:
       ORACLE_PASSWORD: Oracle123
     volumes:
       - oracle-data:/opt/oracle/oradata
+      - ./init-scripts:/container-entrypoint-initdb.d
 
 volumes:
   oracle-data:
